@@ -3,13 +3,13 @@ import "./App.css";
 import Box from "3box";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Nav from "../../../Downloads/dapp-store-master/src/components/Nav";
+import Nav from "./components/Nav";
 import { BounceLoader } from "react-spinners";
 
 import Home from "./pages/Home";
 import AddApp from "./pages/addArtwork";
 import Profile from "./pages/Profile";
-import { SPACE_NAME } from "../../../Downloads/dapp-store-master/src/Constants";
+import { SPACE_NAME } from "./Constants";
 
 const getThreeBox = async address => {
   const profile = await Box.getProfile(address);
