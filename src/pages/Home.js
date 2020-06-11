@@ -16,8 +16,8 @@ class AppCard extends Component {
           <img
             style={{ height: "10vw" }}
             src={
-              this.props.post.message.appImage
-                ? this.props.post.message.appImage
+              this.props.post.message.imageUrl
+                ? this.props.post.message.imageUrl
                 : "https://via.placeholder.com/200"
             }
             onError={ev =>
